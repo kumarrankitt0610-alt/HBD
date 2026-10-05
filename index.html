@@ -1,0 +1,635 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         PAGE 1 — SECRET BEGINNING
+    ====================================================== -->
+
+    <section id="page1" class="page page-one">
+
+        <div id="butterflyLayer"></div>
+
+        <main class="secret-card">
+
+            <div class="profile-circle">
+                <img
+                    src="C:\Users\Ankit kumar\OneDrive\Desktop\HBD\Brown and White Scrapbook Collage Happy Birthday Instagram Story - Copy - Copy.png"
+                    alt="Birthday Photo"
+                    class="profile-image"
+                >
+            </div>
+
+            <div class="eyebrow">
+                A LITTLE SECRET
+            </div>
+
+            <h1>Enter Passcode</h1>
+
+            <p class="subtitle">
+                A little surprise is waiting for you...
+            </p>
+
+            <div class="passcode-dots" id="passcodeDots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <div class="status" id="status">
+                Enter the secret code
+            </div>
+
+            <div class="keypad">
+
+                <button class="key" data-number="1">1</button>
+                <button class="key" data-number="2">2</button>
+                <button class="key" data-number="3">3</button>
+
+                <button class="key" data-number="4">4</button>
+                <button class="key" data-number="5">5</button>
+                <button class="key" data-number="6">6</button>
+
+                <button class="key" data-number="7">7</button>
+                <button class="key" data-number="8">8</button>
+                <button class="key" data-number="9">9</button>
+
+                <button class="key key-empty"></button>
+
+                <button class="key" data-number="0">0</button>
+
+                <button
+                    class="key delete-key"
+                    id="deleteKey"
+                >
+                    ⌫
+                </button>
+
+            </div>
+
+            <div class="made-with">
+                Made with love ❤️
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- =====================================================
+         PAGE 2 — THE BIRTHDAY MOVIE
+    ====================================================== -->
+
+    <section id="page2" class="page page-two">
+
+        <div class="cinema-stars"></div>
+        <div class="cinema-glow"></div>
+
+        <div class="curtain curtain-left">
+            <div class="curtain-folds"></div>
+        </div>
+
+        <div class="curtain curtain-right">
+            <div class="curtain-folds"></div>
+        </div>
+
+
+        <!-- COUNTDOWN -->
+
+        <div id="countdownScreen" class="countdown-screen">
+
+            <div class="movie-label">
+                THE BIRTHDAY MOVIE
+            </div>
+
+            <h2 class="countdown-title">
+                Something magical is about to begin
+            </h2>
+
+            <div class="countdown-line"></div>
+
+            <div class="countdown-wrapper">
+
+                <div class="countdown-box">
+                    <span id="days" class="countdown-number">00</span>
+                    <span class="countdown-label">DAYS</span>
+                </div>
+
+                <div class="countdown-separator">:</div>
+
+                <div class="countdown-box">
+                    <span id="hours" class="countdown-number">00</span>
+                    <span class="countdown-label">HOURS</span>
+                </div>
+
+                <div class="countdown-separator">:</div>
+
+                <div class="countdown-box">
+                    <span id="minutes" class="countdown-number">00</span>
+                    <span class="countdown-label">MINUTES</span>
+                </div>
+
+                <div class="countdown-separator">:</div>
+
+                <div class="countdown-box">
+                    <span id="seconds" class="countdown-number">00</span>
+                    <span class="countdown-label">SECONDS</span>
+                </div>
+
+            </div>
+
+            <div class="countdown-note">
+                Until the moment everything changes...
+            </div>
+
+        </div>
+
+
+        <!-- AGE REVEAL -->
+
+        <div id="ageReveal" class="age-reveal">
+
+            <div id="ageNumber" class="age-number">
+                17
+            </div>
+
+            <div id="sweetEighteen" class="sweet-eighteen">
+                SWEET 18TH
+            </div>
+
+        </div>
+
+
+        <!-- FINAL BIRTHDAY REVEAL -->
+
+        <div id="birthdayFinal" class="birthday-final">
+
+            <canvas id="fireworksCanvas"></canvas>
+
+            <div class="final-particles"></div>
+
+            <div class="final-content">
+
+                <div class="final-small-title">
+                    THE WAIT IS OVER
+                </div>
+
+                <div class="final-age">
+                    18
+                </div>
+
+                <div class="final-photo-frame">
+
+                    <img
+                        src="C:\Users\Ankit kumar\OneDrive\Desktop\HBD\anu21.jpg"
+                        alt="Birthday memory"
+                        class="final-photo"
+                    >
+
+                </div>
+
+                <h1>
+                    HAPPY 18TH
+                    <span>BIRTHDAY</span>
+                </h1>
+
+                <div class="birthday-name">
+                    Anushka
+                </div>
+
+                <div class="final-hearts">
+                    ✦ ✦
+                </div>
+
+                <button
+                    id="continueToCake"
+                    class="continue-button"
+                    type="button"
+                >
+                    CONTINUE
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             PAGE 3 — INTERACTIVE BIRTHDAY
+        ====================================================== -->
+
+        <section id="page3" class="page-three">
+
+            <!-- Ambient background -->
+            <div class="page3-glow"></div>
+            <div class="page3-stars"></div>
+
+            <!-- ===============================================
+                 STEP 1 — PULL THE STRING
+            ================================================ -->
+
+            <div
+                id="pullStage"
+                class="cake-stage pull-stage active"
+            >
+
+                <div class="stage-kicker">
+                    A LITTLE SURPRISE
+                </div>
+
+                <h2>
+                    Pull the String
+                </h2>
+
+                <p class="stage-instruction">
+                    Something special is waiting for you...
+                </p>
+
+                <div
+                    id="stringMachine"
+                    class="string-machine"
+                >
+
+                    <div class="string-top"></div>
+
+                    <div
+                        id="pullString"
+                        class="pull-string"
+                    >
+                        <span class="string-knot"></span>
+                    </div>
+
+                    <div class="string-label">
+                        PULL
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ===============================================
+                 STEP 2 — BLOW CANDLES
+            ================================================ -->
+
+            <div
+                id="candleStage"
+                class="cake-stage candle-stage"
+            >
+
+                <div class="stage-kicker">
+                    MAKE A WISH
+                </div>
+
+                <h2>
+                    Blow the Candles
+                </h2>
+
+                <p class="stage-instruction">
+                    Blow gently into your microphone
+                    or tap the flames.
+                </p>
+
+                <div class="cake-scene">
+
+                    <div class="cake-plate"></div>
+
+                    <div class="cake">
+
+                        <div class="cake-top"></div>
+
+                        <div class="cake-cream cream-one"></div>
+                        <div class="cake-cream cream-two"></div>
+
+                        <div class="cake-body">
+
+                            <div class="cake-drip drip-one"></div>
+                            <div class="cake-drip drip-two"></div>
+                            <div class="cake-drip drip-three"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="candle candle-one">
+
+                        <div
+                            id="flame1"
+                            class="flame"
+                        ></div>
+
+                    </div>
+
+                    <div class="candle candle-two">
+
+                        <div
+                            id="flame2"
+                            class="flame"
+                        ></div>
+
+                    </div>
+
+                    <div class="candle candle-three">
+
+                        <div
+                            id="flame3"
+                            class="flame"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+                <button
+                    id="blowButton"
+                    class="stage-button"
+                    type="button"
+                >
+                    BLOW THE CANDLES ✨
+                </button>
+
+                <div
+                    id="candleMessage"
+                    class="stage-message"
+                >
+                    Make your wish...
+                </div>
+
+            </div>
+
+
+            <!-- ===============================================
+                 STEP 3 — CUT THE CAKE
+            ================================================ -->
+
+            <div
+                id="cutStage"
+                class="cake-stage cut-stage"
+            >
+
+                <div class="stage-kicker">
+                    ONE LAST THING
+                </div>
+
+                <h2>
+                    Cut the Cake
+                </h2>
+
+                <p class="stage-instruction">
+                    Drag the knife across the cake.
+                </p>
+
+                <div
+                    id="cutCakeScene"
+                    class="cut-cake-scene"
+                >
+
+                    <div class="cake-plate"></div>
+
+                    <div
+                        id="cutCake"
+                        class="cake cuttable-cake"
+                    >
+
+                        <div class="cake-top"></div>
+
+                        <div class="cake-cream cream-one"></div>
+                        <div class="cake-cream cream-two"></div>
+
+                        <div class="cake-body">
+
+                            <div class="cake-drip drip-one"></div>
+                            <div class="cake-drip drip-two"></div>
+                            <div class="cake-drip drip-three"></div>
+
+                        </div>
+
+                        <div
+                            id="cakeCutLine"
+                            class="cake-cut-line"
+                        ></div>
+
+                    </div>
+
+                    <div
+                        id="cakeKnife"
+                        class="cake-knife"
+                        draggable="false"
+                    >
+                        <div class="knife-blade"></div>
+                        <div class="knife-handle"></div>
+                    </div>
+
+                </div>
+
+                <div
+                    id="cutMessage"
+                    class="stage-message"
+                >
+                    Hold the knife and cut...
+                </div>
+
+            </div>
+
+
+            <!-- ===============================================
+                 STEP 4 — FINAL
+            ================================================ -->
+
+            <div
+                id="page3Final"
+                class="cake-stage page3-final"
+            >
+
+                <div class="final-confetti"></div>
+
+                <div class="final-18">
+                    18
+                </div>
+
+                <div class="page3-final-content">
+
+                    <div class="page3-final-small">
+                        AND SO THE NEXT CHAPTER BEGINS
+                    </div>
+
+                    <div class="page3-final-heart">
+                        ❤️
+                    </div>
+
+                    <h2>
+                        HAPPY 18TH
+                        <span>BIRTHDAY</span>
+                    </h2>
+
+                    <div class="page3-final-name">
+                        Anushka
+                    </div>
+
+                    <div class="page3-final-line"></div>
+
+                    <p>
+                        May this year be as beautiful,
+                        magical and unforgettable as you are.
+                    </p>
+
+                    <div class="page3-final-line"></div>
+
+<p>
+    May this year be as beautiful,
+    magical and unforgettable as you are.
+    You're precious and pure🌷🦢✨.
+</p>
+
+</div>
+
+
+  <!-- ==================== PAGE 4 — WISHES ==================== -->
+<div id="page4Placeholder" class="page4-placeholder wishes-page">
+
+    <div class="wishes-glow"></div>
+
+    <div class="wishes-layout">
+
+        <!-- CAT SIDE -->
+        <div class="wishes-cat-area">
+
+            <div class="cat-speech">
+                Make three little wishes... ❤️
+            </div>
+
+            <div class="cat-image-wrap">
+                <img src="cat.png" alt="Cute cat" class="wishes-cat">
+            </div>
+
+        </div>
+
+
+        <!-- NOTEPAD SIDE -->
+        <div class="wishes-notepad">
+
+            <div class="notepad-ring ring-one"></div>
+            <div class="notepad-ring ring-two"></div>
+            <div class="notepad-ring ring-three"></div>
+
+            <div class="notepad-header">
+
+                <div>
+                    <span class="notepad-small">A LITTLE SECRET</span>
+                    <h2>My Little Wishes</h2>
+                </div>
+
+                <div class="notepad-heart">♥</div>
+
+            </div>
+
+
+            <div class="notepad-paper">
+
+                <div class="paper-intro">
+                    Write three little wishes...
+                </div>
+
+
+                <!-- WISH 1 -->
+                <div class="wish-row">
+
+                    <div class="wish-number">
+                        01
+                    </div>
+
+                    <textarea
+                        id="wish1"
+                        class="wish-input"
+                        maxlength="300"
+                        placeholder="Write your first wish..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- WISH 2 -->
+                <div class="wish-row">
+
+                    <div class="wish-number">
+                        02
+                    </div>
+
+                    <textarea
+                        id="wish2"
+                        class="wish-input"
+                        maxlength="300"
+                        placeholder="Write your second wish..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- WISH 3 -->
+                <div class="wish-row">
+
+                    <div class="wish-number">
+                        03
+                    </div>
+
+                    <textarea
+                        id="wish3"
+                        class="wish-input"
+                        maxlength="300"
+                        placeholder="Write your third wish..."
+                    ></textarea>
+
+                </div>
+
+
+                <div id="wishStatus" class="wish-status">
+                    Three little wishes, just for you...
+                </div>
+
+
+                <button
+                    id="continueWishButton"
+                    class="wish-continue-button"
+                    type="button"
+                    disabled
+                >
+                    CONTINUE <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </section>
+
+    </section>
+
+    <audio id="birthdayAudio" loop preload="auto">
+    <source src="C:\Users\Ankit kumar\OneDrive\Desktop\HBD\happy-birthday.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="crackerAudio" preload="auto">
+    <source src="cracker-sound.mp3" type="audio/mpeg">
+</audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
